@@ -1,0 +1,69 @@
+.search-card {
+	border-radius: 0;
+	overflow: hidden;
+	margin-bottom: 15px;
+	padding: 6px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.search-card > div {
+	padding: 15px 0;
+}
+
+.search-card > div:first-child {
+	padding: 0;
+}
+
+.search-card > div:last-child {
+	border-top: 1px dashed #777;
+	padding-bottom: 0;
+}
+
+.hotel-image {
+	background-size: cover;
+	background-position: center;
+	height: 215px;
+}
+
+.recomendation {
+	position: absolute;
+	color: #ffffff;
+	background-color: #2671DD;
+	width: 100%;
+	padding: 5px;
+}
+
+.recomendation > span {
+	font-weight: bold;
+}
+
+.room-notice {
+	color: #E56800;
+}
+
+.price-tag {
+	color: #E56800;
+	margin: 0;
+}
+
+.hotel-name {
+	margin: 0;
+}
+
+.fa-star {
+	color: #FDBA12;
+}
+
+@media (min-width:768px) {
+
+	.search-card > div {
+		padding: 0 10px;
+	}
+
+	.search-card > div:last-child {
+		border-top: none;
+		border-left: 1px dashed #777;
+		padding-left: 15px;
+		height: 215px;
+	}
+}

@@ -1,0 +1,21 @@
+.sub-nav-options {
+	margin-bottom: 30px;
+}
+
+.sub-nav-option {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+
+.sub-nav-option > span {
+	display: block;
+	padding-bottom: 8px;
+}
+
+.edit-search-desktop {
+	padding: 12px;
+}
+
+.edit-search-form select {
+	margin-bottom: 10px;
+}

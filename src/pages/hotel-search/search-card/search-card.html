@@ -1,0 +1,30 @@
+<div class="search-card panel panel-default">
+	<div class="col-xs-12 col-sm-4">
+		<div *ngIf="hotel.recomended" class="recomendation center-block text-center">
+			<span>¡Hotel recomendado!</span>
+		</div>
+		<div class="hotel-image" [style.background-image]="'url(assets/img/' + hotel.img + ')'"></div>
+	</div>
+	<div class="col-xs-12 col-sm-4">
+		<h4 class="hotel-name"><b>{{hotel.name}}</b></h4>
+		<i *ngFor="let star of starsNum(hotel.stars)" class="fa fa-fw fa-star"></i><br>
+		<p class="room-notice"><b><i class="fa fa-fw fa-bed"></i> Sólo la habitación</b></p>
+		<i *ngIf="hotel.services.bar" class="fa fa-fw fa-glass"></i>
+		<i *ngIf="hotel.services.beach" class="fa fa-fw fa-sun-o"></i>
+		<i *ngIf="hotel.services.checkin" class="fa fa-fw fa-check-square-o"></i>
+		<i *ngIf="hotel.services.breakfast" class="fa fa-fw fa-coffee"></i>
+		<i *ngIf="hotel.services.gym" class="fa fa-fw fa-bicycle"></i>
+		<i *ngIf="hotel.services.clean" class="fa fa-fw fa-shower"></i>
+		<i *ngIf="hotel.services.wifi" class="fa fa-fw fa-wifi"></i>
+		<i *ngIf="hotel.services.tv" class="fa fa-fw fa-tv"></i>
+		<i *ngIf="hotel.services.admin" class="fa fa-fw fa-user-circle-o"></i>
+	</div>
+	<div class="col-xs-12 col-sm-4">
+		<p class="text-center">Precio por noche por habitación</p>
+		<h1 class="price-tag text-center"><small class="price-tag">ARS</small> <b>{{(hotel.promotion ? hotel.promotion : hotel.price) | currency:ARS:true:'1.0-0'}}</b></h1>
+		<p class="text-center">Impuestos y tasas no incluídos</p>
+		<a class="center-block btn-almundo">Ver hotel</a>
+		<span *ngIf="hotel.payMethods.quota" class="text-center center-block"><b>Pagá en cuotas</b></span>
+		<span *ngIf="hotel.payMethods.destination" class="text-center center-block"><b>Pagá en destino</b></span>
+	</div>
+</div>

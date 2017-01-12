@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/roboto/roboto-regular.ttf"); }
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #F4F4F4; }
+
+.page-body {
+  margin-bottom: 30px; }
+
+.left-section {
+  padding-left: 0;
+  padding-right: 5px; }
+
+.right-section {
+  padding-right: 0;
+  padding-left: 5px; }
+
+.card {
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+.input-icon {
+  position: relative; }
+
+.input-icon .form-control {
+  margin-bottom: 10px; }
+
+.input-icon > i {
+  position: absolute;
+  left: 6px;
+  top: 10px; }
+
+.form-control {
+  padding-left: 25px; }
+
+.btn-almundo {
+  background-color: #003274;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.8em;
+  padding: 6px;
+  font-weight: bold;
+  box-shadow: 0 -2px 0 #00163C inset;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: block;
+  max-width: 200px;
+  text-align: center; }
+
+.btn-almundo:hover {
+  color: #ffffff;
+  background-color: #194582; }
+
+.navbar {
+  background-color: #003274;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0; }
+
+.navbar-default .navbar-collapse {
+  border: none;
+  background-color: #194582; }
+
+.navbar-toggle, .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  color: #ffffff;
+  background: none;
+  border: none; }
+
+.navbar-toggle {
+  padding: 6px 3px; }
+
+.navbar-nav > li > a {
+  color: #ffffff; }
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.8; }
+
+.search-filter {
+  margin-bottom: 10px; }
+
+@media (min-width: 768px) {
+  .search-filter {
+    text-align: right; }
+
+  .navbar {
+    margin-bottom: 10px; }
+
+  .breadcrumb {
+    margin-bottom: 10px; }
+
+  .navbar-default {
+    height: 55px; }
+
+  .navbar-brand {
+    height: 55px; }
+
+  .navbar-default .navbar-collapse {
+    background-color: #003274; }
+
+  .nav-menu-desktop {
+    margin-bottom: 0; }
+
+  .nav-menu-desktop > li {
+    padding: 15px 0; }
+
+  .nav-menu-desktop > li > a {
+    color: #ffffff;
+    padding: 0 20px;
+    border-left: 1px solid #ffffff; }
+
+  .nav-menu-desktop > li:first-child > a {
+    border: none; } }
+@media (min-width: 992px) {
+  .navbar-default {
+    height: 80px; }
+
+  .navbar-brand {
+    height: 80px; }
+
+  .nav-menu-desktop > li {
+    padding: 30px 0; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px; } }
+
+/*# sourceMappingURL=app.component.css.map */

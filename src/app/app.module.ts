@@ -5,9 +5,16 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { HotelSearchComponent } from 'pages/hotel-search/hotel-search';
+import { HotelSearchCardComponent } from 'pages/hotel-search/search-card/search-card';
+import { HotelSearchFiltersComponent } from 'pages/hotel-search/search-filters/search-filters';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HotelSearchComponent,
+    HotelSearchCardComponent,
+    HotelSearchFiltersComponent
   ],
   imports: [
     BrowserModule,
